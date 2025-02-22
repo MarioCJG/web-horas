@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
     try {
-        const [rows] = await pool.query("SELECT id_consultor, nombre, apellido FROM consultores");
+        const [rows] = await pool.query("SELECT * FROM consultores");
         res.json(rows);
     } catch (error) {
         console.error("Error obteniendo consultores:", error);
