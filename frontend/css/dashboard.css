@@ -1,0 +1,89 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* --- SIDEBAR (MENÚ LATERAL) --- */
+.sidebar {
+    width: 250px;
+    background-color: #007bbd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 🔹 Espaciado uniforme entre elementos */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    background-color: #005f8d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #00456b;
+}
+
+/* 🔹 Corregir distribución de los botones */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+}
+
+/* 🔹 Asegurar que el botón de logout se quede abajo */
+.logout-btn {
+    background-color: #d9534f !important;
+    margin-top: auto; /* 🔹 Empuja el botón al final del sidebar */
+}
+
+.logout-btn:hover {
+    background-color: #c9302c !important;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- SECCIÓN DEL DASHBOARD --- */
+.dashboard-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.dashboard-text {
+    font-size: 18px;
+    color: #666;
+}

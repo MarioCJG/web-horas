@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>CJG Timer</h2>
+            <button onclick="loadPage('historial')">Historial</button>
+            <button onclick="loadPage('horas')">Horas</button>
+            <button onclick="loadPage('ajustes')">Ajustes</button>
+            <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+        </div>
+        <div class="content" id="content">
+            <h2>Bienvenido al Dashboard</h2>
+            <p>Selecciona una opción del menú.</p>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

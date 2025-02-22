@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Horas</title>
+    <link rel="stylesheet" href="css/horas.css">
+</head>
+<body>
+    <div class="horas-container">
+        <h2>Registrar Horas Extras</h2>
+        
+        <form id="horasForm">
+            <label for="consultor">Consultor:</label>
+            <select id="consultor" required></select>
+
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" required></select>
+
+            <label for="fecha_inicio">Fecha Inicio:</label>
+            <input type="date" id="fecha_inicio" required>
+
+            <label for="hora_inicio">Hora Inicio:</label>
+            <input type="time" id="hora_inicio" required>
+
+            <label for="fecha_termino">Fecha Término:</label>
+            <input type="date" id="fecha_termino" required>
+
+            <label for="hora_termino">Hora Término:</label>
+            <input type="time" id="hora_termino" required>
+
+            <label for="horas">Total Horas:</label>
+            <input type="text" id="horas" readonly>
+
+            <button type="submit">Guardar</button>
+        </form>
+
+        <p id="mensaje" class="mensaje"></p>
+    </div>  
+
+    <!-- 🔹 Mover el script aquí para que cargue después del HTML -->
+    <script src="js/horas.js"></script>
+</body>
+</html>

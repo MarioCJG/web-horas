@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+    <link rel="stylesheet" href="css/ajustes.css">
+</head>
+<body class="ajustes">
+
+    <h1>Ajustes</h1>
+
+    <!-- Gestión de Consultores -->
+    <section id="consultores">
+        <h2>Gestión de Consultores</h2>
+        <form id="formConsultor">
+            <input type="hidden" id="consultor_id">
+            <label>Nombre:</label>
+            <input type="text" id="nombre_consultor">
+            <label>Apellido:</label>
+            <input type="text" id="apellido_consultor">
+            <label>Correo:</label>
+            <input type="email" id="correo_consultor">
+            <label>Área:</label>
+            <input type="text" id="area_consultor">
+            <button type="submit">Guardar</button>
+        </form>
+        <h3>Lista de Consultores</h3>
+        <table id="tablaConsultores">
+            <thead>
+                <tr><th>Nombre</th><th>Apellido</th><th>Correo</th><th>Área</th><th>Acciones</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Gestión de Clientes -->
+    <section id="clientes">
+        <h2>Gestión de Clientes</h2>
+        <form id="formCliente">
+            <input type="hidden" id="cliente_id">
+            <label>Nombre:</label>
+            <input type="text" id="nombre_cliente">
+            <label>Apellido:</label>
+            <input type="text" id="apellido_cliente">
+            <label>Correo:</label>
+            <input type="email" id="correo_cliente">
+            <label>Empresa:</label>
+            <input type="text" id="empresa_cliente">
+            <button type="submit">Guardar</button>
+        </form>
+        <h3>Lista de Clientes</h3>
+        <table id="tablaClientes">
+            <thead>
+                <tr><th>Nombre</th><th>Apellido</th><th>Correo</th><th>Empresa</th><th>Acciones</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Gestión de Horas Extras -->
+    <section id="horas_extras">
+        <h2>Gestión de Horas Extras</h2>
+        <table id="tablaHoras">
+            <thead>
+                <tr><th>Consultor</th><th>Cliente</th><th>Fecha Inicio</th><th>Hora Inicio</th><th>Fecha Término</th><th>Hora Término</th><th>Total Horas</th><th>Acciones</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="ajustes.js"></script>
+</body>
+</html>
